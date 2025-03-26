@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran OSIS</title>
+</head>
+<body>
+    <form>
+        <table align="center" border="2" cellpadding="20" rules="none">
+            <tr bgcolor="blue" style="color: white;">
+                <th colspan="2">FORM PENDAFTARAN OSIS</th>
+            </tr>
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text" placeholder="Nama Lengkap" size="20" ></td>
+            </tr>
+            <tr>
+                <td>Nama Panggilan</td>
+                <td><input type="text" placeholder="Nama Panggilan" size="20"></td>
+            </tr>
+            <tr>
+                <td>Tempat Tanggal Lahir</td>
+                <td><input type="date" placeholder="dd/mm/yyyy" size="15"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    Laki-Laki <input type="radio" value="Laki-Laki">
+                    Perempuan <input type="radio" value="Perempuan">
+                </td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon</td>
+                <td><input type="tel" placeholder="Telepon" minlength="0" maxlength="16"></td>
+            </tr>
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    IPA <input type="radio" name="jurusan" value="IPA">
+                    IPS <input type="radio" name="jurusan" value="IPS">
+                    BAHASA <input type="radio" name="jurusan" value="BAHASA">
+                </td>
+            </tr>
+            <tr>
+                <td>Agama </td>
+                <td>
+                    <select name="agama">
+                        <option value="1">Islam</option>
+                        <option value="2">Kristen</option>
+                        <option value="3">Katolik</option>
+                        <option value="4">Hindu</option>
+                        <option value="5">Buddha</option>
+                        <option value="6">Konghucu</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Hobi</td>
+                <td>
+                    Membaca Buku <input type="checkbox" name="hobi" value="Membaca Buku">
+                    Menulis <input type="checkbox" name="hobi" value="Menulis">
+                    dll <input type="checkbox" name="hobi" value="dll">
+                </td>
+            </tr>
+            <tr>
+                <td>Alasan/Motivasi untuk mendaftar</td>
+                <td><textarea rows="10" cols="35" name="motivasi"></textarea></td>
+            </tr>
+            <tr>
+                <td>Foto 3X4</td>
+                <td><input type="file" name="foto"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Daftar">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
